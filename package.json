@@ -1,0 +1,17 @@
+{
+  "type": "module",
+  "name": "shellbot-lambda",
+  "version": "1.0.0",
+  "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.840.0",
+    "@pinecone-database/pinecone": "^6.1.1",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.6.1",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "serverless": "^3.38.0",
+    "serverless-dotenv-plugin": "^6.0.0",
+    "serverless-offline": "^13.9.0"
+  }
+}
