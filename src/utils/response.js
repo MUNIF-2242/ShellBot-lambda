@@ -1,10 +1,4 @@
 export const createResponse = (statusCode, body, headers = {}) => {
-  // console.log("Creating response:", {
-  //   statusCode,
-  //   body,
-  //   headers,
-  // });
-
   return {
     statusCode,
     headers: {
