@@ -13,7 +13,7 @@ class EmbeddingServiceClass {
     this.bedrockClient = new BedrockRuntimeClient({ region: awsRegion });
 
     this.embeddingModelId = CONSTANTS.EMBEDDING_TEXT_MODEL;
-    this.claudeModelId = CONSTANTS.LLM_TEXT_MODEL;
+    this.llmModelId = CONSTANTS.LLM_TEXT_MODEL;
   }
 
   async createEmbedding(text) {
@@ -26,7 +26,7 @@ class EmbeddingServiceClass {
 
     try {
       const response = await this.bedrockClient.send(command);
-      const responseBody = await response.body.transformToString();
+      const responseBody = response.body.transformToString();
       const result = JSON.parse(responseBody);
       return result.embedding;
     } catch (error) {

@@ -18,7 +18,7 @@ class EnhanceServiceClass {
       },
     });
 
-    this.claudeModelId = CONSTANTS.LLM_TEXT_MODEL;
+    this.llmModelId = CONSTANTS.LLM_TEXT_MODEL;
   }
 
   // Main method - returns the complete enhanced text
@@ -47,7 +47,7 @@ Phrase:
     ];
 
     const command = new ConverseStreamCommand({
-      modelId: this.claudeModelId,
+      modelId: this.llmModelId,
       messages,
       inferenceConfig: {
         temperature: 0.9,
