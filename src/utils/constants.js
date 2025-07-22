@@ -9,5 +9,5 @@ export const CONSTANTS = {
   TOP_K: 5,
   KNOWLWDGEBASE_VERSION: "v1",
   EMBEDDING_TEXT_MODEL: "amazon.titan-embed-text-v1",
-  LLM_TEXT_MODEL: "amazon.nova-micro-v1:0",
+  LLM_TEXT_MODEL: "amazon.nova-lite-v1:0",
 };
