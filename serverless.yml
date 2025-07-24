@@ -45,6 +45,13 @@ package:
   individually: true
 
 functions:
+  askQuestion:
+    handler: src/handlers/askQuestion.handler
+    events:
+      - http:
+          path: askQuestion
+          method: post
+          cors: true
   addKnowledgebase:
     handler: src/handlers/addKnowledgebase.handler
     events:
